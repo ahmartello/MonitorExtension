@@ -3,7 +3,7 @@
   "name": "SS Monitor Search",
   "short_name": "Search",
   "description": "A extension that uses the selected text and seach it in Shipping Monitor tool, a tool developed by the Service Selector team inside Mercado Libre.",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "minimum_chrome_version": "38",
   "permissions": [
     "contextMenus", 

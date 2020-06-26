@@ -1,12 +1,12 @@
-searchMonitor = function(shippingId){
-  var query = shippingId.selectionText;
+searchMonitor = function(selectedText){
+  var rawValues = selectedText.selectionText;
 
-  //TODO: validate if the string is a shipping id. skip the ones that aren't
-  //so we can select a big text and run the command on it, without worring.
-  shipping_id_array = query.split(" ") 
+  shippingIdRegex = /([0-9]{11})/;
 
-  for (shipping_id of shipping_id_array){
-    chrome.tabs.create({url: "https://shipping-bo.adminml.com/shipments/monitor/" + shipping_id});
+  for (possibleShippingId of rawValues.split(shippingIdRegex)){
+    if (shippingIdRegex.test(possibleShippingId)){
+      chrome.tabs.create({url: "https://shipping-bo.adminml.com/shipments/monitor/" + possibleShippingId});
+    }
   }
 };
 
