@@ -1,13 +1,14 @@
 {
   "manifest_version": 2,
-  "name": "SS Monitor Search",
+  "name": "Monitor Search",
   "short_name": "Search",
-  "description": "A extension that uses the selected text and seach it in Shipping Monitor tool, a tool developed by the Service Selector team inside Mercado Libre.",
+  "description": "A extension that uses the selected text and search it in Shipping Monitor tool, a tool developed by the Service Selector team inside Mercado Libre.",
   "version": "0.2.0",
   "minimum_chrome_version": "38",
   "permissions": [
     "contextMenus", 
-    "tabs"],
+    "tabs"
+  ],
   "icons": {
     "16": "assets/search.png"
   },
